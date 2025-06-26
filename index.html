@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRUNA - Viste tu actitud</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: linear-gradient(160deg, #001f3f, #00ccff);
+      color: white;
+      scroll-behavior: smooth;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+      margin-left: 10px;
+      text-shadow: 0 0 10px #00eaff;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00eaff;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #d0f0ff;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00eaff;
+      text-shadow: 0 0 5px #0099cc;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px #00eaff;
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product-card h3 {
+      margin: 10px 0 5px;
+      color: #ffffff;
+    }
+    .product-card p {
+      margin-bottom: 5px;
+      color: #c0f0ff;
+    }
+    .product-card a {
+      background-color: #25d366;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      font-size: 24px;
+      padding: 14px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #000;
+      text-decoration: none;
+      z-index: 999;
+    }
+    footer {
+      background-color: #000814;
+      text-align: center;
+      padding: 20px;
+      color: #b0e0ff;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Pitbull Logo" class="logo-icon">
+      <div class="logo">BRUNA</div>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#camisetas">Camisetas</a>
+      <a href="#zapatillas">Zapatillas</a>
+      <a href="#conjuntos">Conjuntos</a>
+      <a href="#accesorios">Accesorios</a>
+      <a href="#tallas-grandes">Tallas Grandes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Viste tu actitud con BRUNA</h1>
+    <p>Moda urbana hecha para ti. Explora nuestras categorías.</p>
+  </section>
+
+  <section id="camisetas">
+    <h2>Camisetas Oversize</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1611078489935-5ad0f2bdcbda?auto=format&fit=crop&w=400&q=80" alt="Camiseta Oversize 1">
+        <h3>Camiseta Oversize 1</h3>
+        <p>$20 | Bs. 720</p>
+        <a href="https://wa.me/584121234567?text=Hola,%20quiero%20comprar%20la%20Camiseta%20Oversize%201">Comprar</a>
+      </div>
+      <!-- Puedes duplicar los productos aquí para llegar a 25 -->
+    </div>
+  </section>
+
+  <section id="zapatillas">
+    <h2>Zapatillas Urbanas</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1596464716129-355eab08c1c3?auto=format&fit=crop&w=400&q=80" alt="Zapatilla Urbana 1">
+        <h3>Zapatilla Urbana 1</h3>
+        <p>$35 | Bs. 1260</p>
+        <a href="https://wa.me/584121234567?text=Hola,%20quiero%20comprar%20la%20Zapatilla%20Urbana%201">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="conjuntos">
+    <h2>Conjuntos Streetwear</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1520975691282-78d4396fdf55?auto=format&fit=crop&w=400&q=80" alt="Conjunto Streetwear 1">
+        <h3>Conjunto Streetwear 1</h3>
+        <p>$40 | Bs. 1440</p>
+        <a href="https://wa.me/584121234567?text=Hola,%20quiero%20comprar%20el%20Conjunto%20Streetwear%201">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="accesorios">
+    <h2>Accesorios Juveniles</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1539883372910-0a74c69dbba1?auto=format&fit=crop&w=400&q=80" alt="Accesorio Juvenil 1">
+        <h3>Accesorio Juvenil 1</h3>
+        <p>$10 | Bs. 360</p>
+        <a href="https://wa.me/584121234567?text=Hola,%20quiero%20comprar%20el%20Accesorio%20Juvenil%201">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tallas-grandes">
+    <h2>Zona Especial – Tallas Grandes</h2>
+    <p style="text-align:center; margin-bottom: 20px;">La talla no define tu flow. Aquí encuentras lo que sí te representa.</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1562158071-f87e5ed25f5a?auto=format&fit=crop&w=400&q=80" alt="Plus Size 1">
+        <h3>Plus Size 1</h3>
+        <p>$25 | Bs. 900</p>
+        <a href="https://wa.me/584121234567?text=Hola,%20quiero%20comprar%20el%20producto%20Plus%20Size%201">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align:center;">¿Tienes preguntas? Escríbenos a nuestro WhatsApp o síguenos en redes sociales.</p>
+  </section>
+
+  <a class="whatsapp-btn" href="https://wa.me/584121234567?text=Hola,%20quiero%20comprar%20en%20BRUNA" target="_blank">💬</a>
+
+  <footer>
+    <p>&copy; 2025 BRUNA. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
